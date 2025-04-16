@@ -1,0 +1,11 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="2.75" height="2.75" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(0 9.625)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(0 19.25)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(19.25)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(19.25 9.625)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(19.25 19.25)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(9.625)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(9.625 9.625)" fill="white"/>
+<rect width="2.75" height="2.75" transform="translate(9.625 19.25)" fill="white"/>
+</svg>

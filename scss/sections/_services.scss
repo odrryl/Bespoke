@@ -1,0 +1,98 @@
+.services {
+	&__container {
+		padding-top: 112rem;
+		padding-bottom: 112rem;
+		justify-content: space-between;
+		gap: 24rem;
+
+		@include tablet {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		@include mobile {
+			padding-top: 60rem;
+			padding-bottom: 60rem;
+		}
+	}
+	&__title {
+		font-weight: 300;
+		font-size: 60rem;
+		line-height: 90%;
+		max-width: 550rem;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+		span {
+			color: var(--accent);
+		}
+
+		@include mobile {
+			font-size: 30rem;
+		}
+	}
+	&__desc {
+		margin-top: 24rem;
+		font-family: var(--second-family);
+		font-weight: 300;
+		font-size: 20rem;
+		line-height: 120%;
+		color: var(--dark-secondary);
+		max-width: 550rem;
+
+		@include mobile {
+			font-size: 18rem;
+		}
+	}
+
+	&__btn {
+		margin-top: 24rem;
+		color: var(--dark);
+	}
+	&__block {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 16rem;
+		grid-row-gap: 16rem;
+
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+
+		&-item {
+			background: var(--dark);
+			color: var(--light);
+			border-radius: 16rem;
+			padding: 24rem;
+			width: 100%;
+			max-width: 324rem;
+			@include mobile {
+				max-width: 300rem;
+			}
+
+			&__title {
+				margin-top: 64rem;
+
+				font-weight: 300;
+				font-size: 28rem;
+				line-height: 100%;
+				text-transform: uppercase;
+
+				@include mobile {
+					font-size: 20rem;
+					margin-top: 34rem;
+				}
+			}
+			&__desc {
+				margin-top: 12rem;
+
+				font-family: var(--second-family);
+				font-weight: 200;
+				font-size: 16rem;
+				line-height: 150%;
+				color: var(--light-secondary);
+			}
+		}
+	}
+}

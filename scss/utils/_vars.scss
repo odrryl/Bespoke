@@ -1,0 +1,21 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 995px;
+$tablet-small: 770px;
+$mobile: 576px;
+
+:root {
+	// FONTS
+	--font-family: "Unbounded", sans-serif;
+	--second-family: "Poppins", sans-serif;
+
+	// TRANSITIONS
+	--transition: 0.3s all ease-in-out;
+
+	// COLORS
+	--dark: #000000;
+	--dark-secondary: #585254;
+	--light: #fff;
+	--light-secondary: #dadada;
+	--accent: #ff6c2d;
+}

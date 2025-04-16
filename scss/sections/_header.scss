@@ -1,0 +1,106 @@
+.header {
+	background: var(--dark);
+	padding: 28rem 0rem;
+
+	&__container {
+		justify-content: space-between;
+	}
+
+	&__backdrop {
+		background: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		transform: translateX(120%);
+		display: none;
+		transition: var(--transition);
+		opacity: 0;
+
+		@include tablet {
+			display: block;
+		}
+
+		&._active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 40rem;
+		z-index: 9;
+		font-family: var(--second-family);
+		font-weight: 300;
+		font-size: 14rem;
+		transition: var(--transition);
+		text-transform: uppercase;
+
+		@include mobile {
+			font-size: 20rem;
+		}
+
+		@include tablet {
+			z-index: 9;
+			position: fixed;
+			width: 70%;
+			height: 100%;
+			flex-direction: column;
+			left: 0;
+			top: 0;
+			background: var(--dark);
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+			transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+		.icon-close {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: var(--light);
+		}
+	}
+
+	&__a {
+		color: var(--light);
+		transition: var(--transition);
+		position: relative;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -2rem;
+			left: 0;
+			width: 100%;
+			height: 1rem;
+			background-color: var(--light);
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.4s ease;
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+
+	@include tablet {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bespoke</title>
+		<link rel="icon" type="image/x-icon" href="img/icons/favicon.ico" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header class="header" id="home">
+			<div class="container header__container">
+				<a class="logo" href="#home"
+					><img src="img/icons/logo.svg" alt="Logo" />Bespoke</a
+				>
+				<div class="header__nav">
+					<div
+						class="header__backdrop"
+						id="headerBackdrop"
+						onclick="navToggle()"
+					></div>
+					<ul class="header__ul" id="headerUl">
+						<li class="header__li">
+							<a class="header__a" href="#about">About</a>
+						</li>
+						<li class="header__li">
+							<a class="header__a" href="#services">Services</a>
+						</li>
+						<li class="header__li">
+							<a class="header__a" href="#contact">Contact</a>
+						</li>
+
+						<span class="material-icons icon-close" onclick="navToggle()"
+							>close</span
+						>
+					</ul>
+					<span class="icon-menu" onclick="navToggle()">
+						<img src="img/icons/menu.svg" alt="Menu" />
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__info">
+						<h1 class="hero__title" data-aos="fade-up">
+							Product design that evokes
+							<span class="gradient-text">emotion</span>
+						</h1>
+						<a
+							href="#"
+							class="btn hero__btn"
+							data-aos="fade-up"
+							data-aos-delay="200"
+							>View Our Work</a
+						>
+					</div>
+
+					<div class="hero__visual">
+						<img
+							src="gif/pink-glow.gif"
+							alt="Orange Glow"
+							class="hero__img"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						/>
+
+						<div class="hero__group" data-aos="fade-up" data-aos-delay="400">
+							<img
+								src="gif/pink-glow.gif"
+								alt="Pink Glow"
+								class="hero__preview"
+							/>
+							<img
+								src="gif/blue-glow.gif"
+								alt="Blue Glow"
+								class="hero__preview"
+							/>
+							<img
+								src="gif/light-glow.gif"
+								alt="Light Glow"
+								class="hero__preview"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<div class="container about__container">
+					<h4 class="about__title" data-aos="fade-right">Our Mision</h4>
+					<hr class="section-line" data-aos="line-grow" />
+					<p class="about__desc" data-aos="fade-up" data-aos-delay="100">
+						Bespoke is a premier design consultancy dedicated to helping
+						companies create cutting-edge products that resonate deeply with
+						their audiences. Our expert team blends innovative design with
+						strategic insights to craft products that not only meet functional
+						needs but also evoke powerful emotional connections. At Bespoke, we
+						believe that the true measure of a product's success lies in its
+						ability to move and inspire. Our mission is to transform your vision
+						into reality, delivering products that stand out in the market and
+						leave a lasting impression. Experience the future of product design.
+					</p>
+				</div>
+			</section>
+
+			<section class="services" id="services">
+				<div class="container services__container">
+					<div class="services__info">
+						<h2 class="services__title" data-aos="zoom-in">
+							<span>Crafted</span> To Easily Fit Into Everyday Life
+						</h2>
+						<p class="services__desc" data-aos="fade-up" data-aos-delay="200">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<a
+							href="#"
+							class="btn services__btn"
+							data-aos="fade-up"
+							data-aos-delay="300"
+							>Company Values</a
+						>
+					</div>
+
+					<div class="services__block">
+						<div
+							class="services__block-item"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<img src="img/icons/focus.svg" alt="Focus" />
+							<h3 class="services__block-item__title">User focused</h3>
+							<p class="services__block-item__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<div
+							class="services__block-item"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<img src="img/icons/global.svg" alt="Global" />
+							<h3 class="services__block-item__title">Global</h3>
+							<p class="services__block-item__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<div
+							class="services__block-item"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
+							<img src="img/icons/global.svg" alt="Global" />
+							<h3 class="services__block-item__title">Global</h3>
+							<p class="services__block-item__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<div
+							class="services__block-item"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
+							<img src="img/icons/focus.svg" alt="Focus" />
+							<h3 class="services__block-item__title">User focused</h3>
+							<p class="services__block-item__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="offer">
+				<div class="container offer__container">
+					<div class="offer__block">
+						<video autoplay muted loop playsinline class="background-video">
+							<source src="video/bespoke.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+						<div class="offer__overlay" data-aos="zoom-in">
+							<h2 class="offer__title">Get your product started today</h2>
+							<a href="#" class="btn offer__btn">Request</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="contact">
+			<div class="container footer__container">
+				<div class="footer__socials">
+					<a
+						class="logo-dark"
+						href="#home"
+						data-aos="fade-up"
+						data-aos-delay="300"
+						><img src="img/icons/logo-dark.svg" alt="Logo" />Bespoke</a
+					>
+					<h5
+						class="footer__socials-title"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						Follow us
+					</h5>
+					<div
+						class="footer__socials-group"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						<a href="#" class="footer__socials-group__link"
+							><img src="img/icons/instagram.svg" alt="Instagram"
+						/></a>
+						<a href="#" class="footer__socials-group__link"
+							><img src="img/icons/facebook.svg" alt="Facebook"
+						/></a>
+						<a href="#" class="footer__socials-group__link"
+							><img src="img/icons/youtube.svg" alt="Youtube"
+						/></a>
+						<a href="#" class="footer__socials-group__link"
+							><img src="img/icons/linkedin.svg" alt="Linkedin"
+						/></a>
+					</div>
+				</div>
+
+				<div class="footer__contacts">
+					<div
+						class="footer__contacts-item"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						<h5 class="footer__contacts-item__title">Service</h5>
+						<a href="#" class="footer__contacts-item__link">Order Management</a>
+						<a href="#" class="footer__contacts-item__link">Social Assistant</a>
+						<a href="#" class="footer__contacts-item__link">Crypto Platform</a>
+						<a href="#" class="footer__contacts-item__link"
+							>Analyzer of the News</a
+						>
+					</div>
+					<div
+						class="footer__contacts-item"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<h5 class="footer__contacts-item__title">Company</h5>
+						<a href="#" class="footer__contacts-item__link">About Us</a>
+						<a href="#" class="footer__contacts-item__link">News</a>
+						<a href="#" class="footer__contacts-item__link"
+							>Our trusted partners</a
+						>
+						<a href="#" class="footer__contacts-item__link">FAQ</a>
+					</div>
+					<div
+						class="footer__contacts-item"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						<h5 class="footer__contacts-item__title">Support</h5>
+						<a href="#" class="footer__contacts-item__link">Help Center</a>
+						<a href="#" class="footer__contacts-item__link">Feedback</a>
+						<a href="#" class="footer__contacts-item__link">Contact Us</a>
+						<a href="#" class="footer__contacts-item__link">Terms Conditions</a>
+					</div>
+					<div
+						class="footer__contacts-item"
+						data-aos="fade-up"
+						data-aos-delay="400"
+					>
+						<h5 class="footer__contacts-item__title">Resources</h5>
+						<a href="#" class="footer__contacts-item__link">Download App</a>
+						<a href="#" class="footer__contacts-item__link">Blog</a>
+						<a href="#" class="footer__contacts-item__link">What's New</a>
+						<a href="#" class="footer__contacts-item__link">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__policy">
+				<div class="copyright">
+					&copy; Copyright <span id="copyright-year"></span>. All Rights
+					Reserved.
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

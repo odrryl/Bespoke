@@ -1,0 +1,36 @@
+.about {
+	background: var(--dark);
+	&__container {
+		flex-direction: column;
+		padding-bottom: 112rem;
+		color: var(--light);
+
+		@include mobile {
+			padding-bottom: 60rem;
+		}
+	}
+	&__title {
+		font-family: var(--second-family);
+		font-weight: 300;
+		font-size: 16rem;
+		line-height: 150%;
+		margin-bottom: 12rem;
+		text-transform: uppercase;
+	}
+
+	&__desc {
+		margin-top: 64rem;
+		font-weight: 300;
+		font-size: 28rem;
+		line-height: 100%;
+		text-transform: uppercase;
+		text-indent: 300rem;
+		text-align: left;
+
+		@include mobile {
+			margin-top: 34rem;
+			font-size: 20rem;
+			text-indent: 100rem;
+		}
+	}
+}

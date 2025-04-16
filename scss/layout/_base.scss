@@ -1,0 +1,83 @@
+html,
+body {
+	height: 100%;
+	font-size: 1px;
+}
+body {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16rem;
+	background: var(--light);
+}
+.container {
+	display: flex;
+	max-width: 1440rem;
+	margin-inline: auto;
+	padding: 0rem 48rem;
+
+	@include tablet {
+		padding: 0rem 30rem;
+	}
+
+	@include mobile {
+		padding: 0rem 20rem;
+	}
+}
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	align-items: center;
+	transition: var(--transition);
+	font-family: var(--second-family);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14rem;
+
+	border: 1.5px solid var(--dark-secondary);
+	border-radius: 100rem;
+	padding: 8rem 24rem;
+}
+
+.btn:hover {
+	@include tablet {
+		transform: none;
+	}
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logo {
+	display: flex;
+	font-family: var(--font-family);
+	color: var(--light);
+	align-items: center;
+	gap: 3rem;
+	font-weight: 500;
+	font-size: 18rem;
+}
+
+.logo-dark {
+	@extend .logo;
+	color: var(--dark);
+}
+
+.gradient-text {
+	background: linear-gradient(270deg, #fe2744, #4842ea, #c5deed);
+	background-size: 600% 600%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradientShift 5s ease infinite;
+}
+
+.section-line {
+	border: none;
+	height: 1rem;
+	background-color: var(--dark-secondary);
+
+	width: 0;
+	transform-origin: left;
+}

@@ -1,0 +1,21 @@
+// vendors
+@import "vendors/reset";
+
+// utils
+@import "utils/vars";
+@import "utils/mixins";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+
+// components
+@import "components/animations";
+
+//sections
+@import "sections/header";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/services";
+@import "sections/offer";
+@import "sections/footer";
