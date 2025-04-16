@@ -42,6 +42,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-width: 350rem;
+
+		@include tablet {
+			max-width: 300rem;
+		}
+
+		@include mobile {
+			max-width: 230rem;
+		}
 	}
 	&__group {
 		margin-top: 15rem;
@@ -60,14 +69,6 @@
 		cursor: pointer;
 		transition: var(--transition);
 
-		@include tablet {
-			max-width: 105rem;
-		}
-
-		@include mobile {
-			max-width: 72rem;
-		}
-
 		&:hover {
 			transform: scale(1.12);
 
@@ -82,15 +83,6 @@
 		max-width: 400rem;
 		aspect-ratio: 1 / 1.1;
 		overflow: hidden;
-
-		@include tablet {
-			max-width: 350rem;
-			aspect-ratio: 1 / 1;
-		}
-
-		@include mobile {
-			max-width: 250rem;
-		}
 	}
 
 	&__img img {
