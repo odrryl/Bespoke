@@ -333,7 +333,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350rem; }
+    max-width: 650rem; }
     @media (max-width: 995px) {
       .hero__visual {
         max-width: 300rem; } }
