@@ -28,6 +28,9 @@
 		text-transform: uppercase;
 		max-width: 800rem;
 
+		@include tablet{
+			font-size: 55rem;
+		}
 		@include mobile {
 			font-size: 40rem;
 		}
@@ -53,6 +56,7 @@
 		}
 	}
 	&__group {
+		max-width: 500rem;
 		margin-top: 15rem;
 		display: flex;
 		align-items: center;
@@ -60,9 +64,8 @@
 	}
 
 	&__preview {
-		border-radius: 7rem;
+		max-width: 155rem;
 		width: 100%;
-		max-width: 122rem;
 		aspect-ratio: 1 / 1;
 		overflow: hidden;
 
@@ -78,10 +81,10 @@
 		}
 	}
 	&__img {
-		border-radius: 7rem;
+	
 		width: 100%;
-		max-width: 400rem;
-		aspect-ratio: 1 / 1.1;
+		max-width: 500rem;
+		aspect-ratio: 1.5 / 1;
 		overflow: hidden;
 	}
 

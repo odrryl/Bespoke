@@ -27,6 +27,10 @@
 			color: var(--accent);
 		}
 
+		@include tablet{
+			font-size: 55rem;
+		}
+
 		@include mobile {
 			font-size: 30rem;
 		}

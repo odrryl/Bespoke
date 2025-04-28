@@ -45,6 +45,10 @@
 		color: var(--theme-text);
 		margin-bottom: 24rem;
 
+		@include tablet{
+			font-size: 55rem;
+		}
+
 		@include mobile {
 			font-size: 30rem;
 			max-width: 350rem;
